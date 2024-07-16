@@ -7,5 +7,5 @@ dist/
 *.so.*
 *.so.pyc
 *.so.pyo
-World_of_Tanks_Blitz_RPC.exe
-World_of_Tanks_Blitz_RPC.spec
+*.exe
+*.spec
