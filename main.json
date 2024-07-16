@@ -3,8 +3,7 @@
     "name": "World of Tanks Blitz RPC",
     "description": "Discord Rich Presence for World of Tanks Blitz",
     "author": "Made by @vorlie",
-
-    "config":{
+    "config": {
         "client_id": "419272031960432651",
         "icon": "assets/icon.ico",
         "hero": "assets/hero.png",
@@ -20,70 +19,55 @@
             "favorite_tank": "XM551 Sheridan"
         },
         "replacements": {
-            "Ă¶": "ö",
-            "Ă¤": "ä"
+            "\u0102\u00b6": "\u00f6",
+            "\u0102\u00a4": "\u00e4"
         },
         "tanks": [
             {
                 "name": "XM551 Sheridan",
-                "type": "Tech Tree",
-                "tier": "X"
+                "tier": "X",
+                "type": "Tech Tree"
             },
             {
-                "name": "E 100 Jötunn",
-                "type": "Tech Tree",
-                "tier": "X"
+                "name": "E 100 J\u00f6tunn",
+                "tier": "X",
+                "type": "Tech Tree"
             },
             {
                 "name": "T-62A",
-                "type": "Tech Tree",
-                "tier": "X"
+                "tier": "X",
+                "type": "Tech Tree"
             },
             {
                 "name": "Centurion Mk. 5/1 RAAC",
-                "type": "Collector",
-                "tier": "VIII"
+                "tier": "VIII",
+                "type": "Collector"
             },
             {
-                "name": "Strv 81 Kämpe",
-                "type": "Collector",
-                "tier": "VIII"
-            },
-            {
-                "name": "E-10",
-                "type": "Collector",
-                "tier": "VII"
-            },
-            {
-                "name": "Silencer",
-                "type": "Collector",
-                "tier": "VII"
-            },
-            {
-                "name": "Churchill VIII",
-                "type": "Collector",
-                "tier": "VI"
+                "name": "Strv 81 K\u00e4mpe",
+                "tier": "VIII",
+                "type": "Collector"
             },
             {
                 "name": "Y5 T-34",
-                "type": "Premium",
-                "tier": "V"
+                "tier": "V",
+                "type": "Premium"
             },
             {
                 "name": "Pz. III",
-                "type": "Tech Tree",
-                "tier": "III"
+                "tier": "III",
+                "type": "Tech Tree"
             },
             {
                 "name": "Vae Type B",
-                "type": "Tech Tree",
-                "tier": "I"
+                "tier": "I",
+                "type": "Tech Tree"
             },
             {
                 "name": "R35",
-                "type": "Tech Tree",
-                "tier": "I"
+                "tier": "I",
+                "type": "Tech Tree"
             }
-        ]  
+        ]
     }
 }
