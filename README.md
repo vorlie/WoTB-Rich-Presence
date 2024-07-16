@@ -7,6 +7,9 @@ If you plan to use the `.exe`, please consider adding it to your antivirus excep
 - You might want to check `C:\Users\USER\AppData\Local\wotblitz\DAVAProject\image_cache` for the avatar image.
   - Then upload it to an image host or a Discord server, and replace the "small_image" value with the direct image URL.
 
+
+## Configuration
+There is an app for easier configuration. []
 - You can find the full json here:
   - `username` : Your in-game username.
   - `small_image`, `avatar_url` : Your in-game avatar URL. *You don't need to set the `avatar_url` as its not being used right now*
