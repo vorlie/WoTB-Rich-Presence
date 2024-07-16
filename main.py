@@ -6,9 +6,11 @@ from pypresence import Presence
 class WoTB_RPC(tk.Tk):
     def __init__(self):
         super().__init__()
+        print("Starting WoTB RPC")
+        print("Loading json data...")
         with open('main.json', 'r', encoding='utf-8') as f:
             self.data = json.load(f)
-            
+        print("Data loaded successfully!")
         self.large_image = self.data['config']['large_image']
         self.large_text = self.data['author']
         self.text = "{tank_name} - Tier {tier} {type_}"
@@ -21,12 +23,15 @@ class WoTB_RPC(tk.Tk):
         self.title_var = f"{self.data['name']} : {self.data['variables']['player']['username']}"
         self.replacements = self.data['variables']['replacements']
         self.protocol("WM_DELETE_WINDOW", self.fully_close_app)
-        
+        print("Connecting to discord...")
         self.RPC = Presence(self.client_id)
         self.RPC.connect()
         self.start_time = time.time()
+        print("Connected to discord!")
         
+        print("Initializing UI...")
         self.initialize_ui()
+        print("UI initialized!")
         self.check_process()
         self.refresh_tank_list()
         
@@ -234,6 +239,7 @@ class WoTB_RPC(tk.Tk):
         
     def clear_rpc(self):
         self.RPC.clear()
+        
     def fully_close_app(self):
         self.RPC.clear()
         self.RPC.close()
